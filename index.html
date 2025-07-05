@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Druid Gratta e Vinci</title>
+  <style>
+    body {
+      background: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      color: #333;
+    }
+    img.logo {
+      max-width: 200px;
+      margin-bottom: 40px;
+    }
+    button {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #5a2e07;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo: sostituisci con il link diretto al logo o immagine -->
+  <img class="logo" src="https://i.imgur.com/q0uJb7u.png" alt="Logo Druid Pub" />
+
+  <button onclick="vaiAlPremio()">Scopri se hai vinto!</button>
+
+  <script>
+    function vaiAlPremio() {
+      const links = [
+        "https://tally.so/r/nPNNK1",  // Birra
+        "https://tally.so/r/3qqxY7",  // Dolce
+        "https://tally.so/r/nrQNdl"   // Non hai vinto
+      ];
+      // Scegli un link casuale
+
+const randomIndex = Math.floor(Math.random() * links.length);
+      const url = links[randomIndex];
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
+```
+
